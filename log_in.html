@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"> 
+    <script src="script.js" defer></script>
+    <title>Login - Hopen</title>
+   
+</head>
+<body class="body-login">
+    <main class="container-login">
+        <figure class="logo">
+            <a href="pagina_principal.html">
+                <img src="hopen_logo.jpeg" alt="Logo da Marca"> 
+            </a>
+        </figure>
+        <h2>Faça seu Login</h2>
+        <form method="post">
+            <section class="form-group">
+                <label for="nome"></label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+           
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+                <label for="medico"></label>
+                <input type="text" id="medico" name="medico" placeholder="Nome do médico" required>
+               
+                <label for="telefone"></label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+            </section>
+            <button type="submit" class="btn-login">Entrar</button>
+        </form>
+    </main>
+</body>
+</html>
