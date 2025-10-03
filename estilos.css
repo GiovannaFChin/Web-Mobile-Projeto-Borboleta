@@ -316,10 +316,16 @@ body.modo-escuro {
     background-color: #1a1a1a;
     color: #ffffff;
 }
-
-body.modo-escuro .titulo,
 body.modo-escuro .menu-link,
 body.modo-escuro .botao-login,
+body.modo-escuro .titulo{
+    color: #ffffff !important 
+}
+body.modo-escuro .texto,
+body.modo-escuro .texto2,
+body.modo-escuro .texto3,
+body.modo-escuro p,
+body.modo-escuro li 
 body.modo-escuro .texto-produto,
 
 body.modo-escuro .texto-produto p {
