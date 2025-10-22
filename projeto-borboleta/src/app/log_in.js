@@ -14,12 +14,12 @@ export default function LoginPage() {
     e.preventDefault();
 
     if (email === "admin@hopen.com" && senha === "12345") {
-      setMensagem("✅ Login realizado com sucesso! Redirecionando...");
+      setMensagem("Login realizado com sucesso!");
       setTimeout(() => {
-        window.location.href = "/"; // redireciona para página inicial
+        window.location.href = "/"; 
       }, 2000);
     } else {
-      setMensagem("❌ Email ou senha incorretos. Tente novamente.");
+      setMensagem("Email ou senha incorretos. Tente novamente.");
     }
   };
 
