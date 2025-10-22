@@ -4,7 +4,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import DarkModeToggle from "../components/DarkModeToggle";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import styles from "./LoginForm.module.css";
+import styles from "./Login.module.css";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
