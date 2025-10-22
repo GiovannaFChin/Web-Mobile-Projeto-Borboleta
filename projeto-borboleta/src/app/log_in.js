@@ -4,7 +4,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import DarkModeToggle from "../components/DarkModeToggle";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import styles from "./Login.module.css";
+import styles from "./LoginForm.module.css";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -12,15 +12,10 @@ export default function LoginPage() {
   const [mensagem, setMensagem] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    if (email === "admin@hopen.com" && senha === "12345") {
-      setMensagem("Login realizado com sucesso!");
-      setTimeout(() => {
-        window.location.href = "/"; 
-      }, 2000);
-    } else {
-      setMensagem("Email ou senha incorretos. Tente novamente.");
-    }
+    setMensagem("✅ Login realizado com sucesso!");
+    setTimeout(() => {
+      window.location.href = "/"; 
+    }, 2000);
   };
 
   return (
@@ -29,6 +24,7 @@ export default function LoginPage() {
         <title>Login - Hopen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+
       <header>
         <h1 className="titulo">Login</h1>
         <Navbar />
@@ -76,4 +72,6 @@ export default function LoginPage() {
       <ScrollToTopButton />
     </>
   );
+}
+
 }
