@@ -12,7 +12,7 @@ export default function LoginPage() {
   const [mensagem, setMensagem] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMensagem("✅ Login realizado com sucesso!");
+    setMensagem("Login realizado com sucesso!");
     setTimeout(() => {
       window.location.href = "/"; 
     }, 2000);
@@ -32,7 +32,7 @@ export default function LoginPage() {
 
       <main className={styles.container}>
         <form onSubmit={handleSubmit} className={styles.form}>
-          <h2>Bem-vindo de volta 👋</h2>
+          <h2>Bem-vindo de volta!</h2>
 
           <label htmlFor="email">E-mail:</label>
           <input
