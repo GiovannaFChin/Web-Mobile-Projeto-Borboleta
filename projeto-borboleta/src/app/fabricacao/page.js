@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
+
 import FabricationContent from '../components/FabricationContent';
-import DarkModeToggle from '../components/DarkModeToggle'; 
-import ScrollToTopButton from '../components/ScrollToTopButton'; 
+import Botao from '../components/Botao';
 
 export default function Fabricacao() {
   return (
@@ -14,13 +13,13 @@ export default function Fabricacao() {
       
       <header>
         <h1 className="titulo">Fabricação</h1>
-        <Navbar />
+        
       </header>
       
       <FabricationContent />
 
-      <DarkModeToggle />
-      <ScrollToTopButton />
+      
+      <Botao />
     </>
   );
 }

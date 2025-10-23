@@ -1,9 +1,8 @@
 "use client";
 import { useState } from "react";
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import DarkModeToggle from "../components/DarkModeToggle";
-import ScrollToTopButton from "../components/ScrollToTopButton";
+
+import Botao from "../components/Botao";
 import styles from "./Login.module.css";
 
 export default function LoginPage() {
@@ -68,8 +67,8 @@ export default function LoginPage() {
           )}
         </form>
       </main>
-      <DarkModeToggle />
-      <ScrollToTopButton />
+      
+      <Botao />
     </>
   );
 }

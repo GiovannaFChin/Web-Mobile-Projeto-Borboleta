@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import Navbar from '../components/Navbar';
+
 import ProductCard from '../components/ProductCard';
-import DarkModeToggle from '../components/DarkModeToggle';
-import ScrollToTopButton from '../components/ScrollToTopButton';
-import ModalAlert from '../components/ModalAlert';
-import useAlert from '../hooks/useAlert';
+
+import Botao from '../components/Botao';
+
 
 const products = [
   {
@@ -31,7 +30,6 @@ const products = [
 ];
 
 export default function Home() {
-  const [alert, showAlert] = useAlert();
 
   return (
     <div className="body">
@@ -44,7 +42,7 @@ export default function Home() {
         <h1 className="titulo">
           <strong>Produtos</strong>
         </h1>
-        <Navbar />
+        
         <article className="texto-produto">
           <p>
             <strong>Descubra os Benefícios do Óleo de Canabidiol (CBD)! 🌿💚</strong>
@@ -67,21 +65,20 @@ export default function Home() {
       <main className="container-produtos">
         <section className="itens">
           {products.map(product => (
-            <ProductCard 
+            <ProductCard
               key={product.id}
               name={product.name}
               price={product.price}
               image={product.image}
               alt={product.alt}
-              showAlert={showAlert}
             />
           ))}
         </section>
       </main>
       
-      <DarkModeToggle />
-      <ScrollToTopButton />
-      <ModalAlert alert={alert} />
+   
+      <Botao />
+    
     </div>
   );
 }
