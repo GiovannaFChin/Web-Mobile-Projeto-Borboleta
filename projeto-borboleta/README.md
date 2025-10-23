@@ -11,6 +11,18 @@ O site tem como principais objetivos:
 - Oferecer produtos confiáveis e de qualidade
 - Garantir uma navegação simples, intuitiva e acessível
 
+##  Migração para Next.js
+
+O site **Hopen** está em processo de migração para **Next.js**, o que permitirá:
+
+- Melhor performance e renderização mais rápida
+- Estrutura moderna baseada em componentes
+- Atualizações mais simples e escalabilidade
+- Uso de **server-side rendering (SSR)** e **static site generation (SSG)**
+- Integração facilitada com futuras funcionalidades e APIs
+
+
+
 ###  Público-alvo
 
 Adultos interessados em:
