@@ -83,7 +83,6 @@ O desenvolvimento do site **Hopen** proporcionou uma experiência completa em cr
 
 * Estruturação de conteúdo clara e organizada.
 * Design responsivo e acessível.
-* Aplicação de boas práticas de UX e interatividade.
 * Planejamento e implementação de funcionalidades de forma eficiente.
 
 O projeto consolidou conhecimentos essenciais em **HTML, CSS e JavaScript**, permitindo criar um site organizado, intuitivo e pronto para futuras melhorias e expansões.
