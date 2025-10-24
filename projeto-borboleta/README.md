@@ -21,6 +21,14 @@ O site **Hopen** está em processo de migração para **Next.js**, o que permiti
 - Uso de **server-side rendering (SSR)** e **static site generation (SSG)**
 - Integração facilitada com futuras funcionalidades e APIs
 
+A migração para **React.js** traz diversas vantagens:
+
+- Criação de **componentes reutilizáveis**, facilitando manutenção e evolução do código.  
+- **Virtual DOM** garante atualizações rápidas e eficientes da interface.  
+- Melhora a **organização e clareza** do projeto.  
+- Facilita a **escala** da aplicação e integração com bibliotecas modernas.  
+- Ideal para construir interfaces **interativas e de fácil manutenção**.
+
 
 
 ###  Público-alvo
