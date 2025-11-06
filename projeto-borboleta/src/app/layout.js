@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import DarkModeToggle from "./components/DarkModeToggle";
 import "./globals.css";
 import { Poppins, Nunito } from "next/font/google";
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <main>{children}</main>
+        <DarkModeToggle/>
         <Footer />
       </body>
     </html>
