@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from "../produtos/produtos.module.css";
 export default function ProductCard({ name, price, image, alt, showAlert }) { 
   
