@@ -1,9 +1,8 @@
+"use client"
 import Head from 'next/head';
-
 import ProductCard from '../components/ProductCard';
-
 import Botao from '../components/Botao';
-
+import styles from "./produtos.module.css";
 
 const products = [
   {
@@ -32,7 +31,7 @@ const products = [
 export default function Home() {
 
   return (
-    <div className="body">
+    <section className="body">
       <Head>
         <title>Produtos - CBD</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,7 +42,7 @@ export default function Home() {
           <strong>Produtos</strong>
         </h1>
         
-        <article className="texto-produto">
+        <article className={styles.textoProduto}>
           <p>
             <strong>Descubra os Benefícios do Óleo de Canabidiol (CBD)! 🌿💚</strong>
             <br />
@@ -62,8 +61,8 @@ export default function Home() {
         </article>
       </header>
 
-      <main className="container-produtos">
-        <section className="itens">
+      <main className={styles.containerProdutos}>
+        <section className={styles.itens}>
           {products.map(product => (
             <ProductCard
               key={product.id}
@@ -79,6 +78,6 @@ export default function Home() {
    
       <Botao />
     
-    </div>
+    </section>
   );
 }

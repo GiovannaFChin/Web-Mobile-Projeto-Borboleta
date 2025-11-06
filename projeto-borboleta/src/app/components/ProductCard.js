@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import styles from "../produtos/produtos.module.css";
 export default function ProductCard({ name, price, image, alt, showAlert }) { 
   
   const handleCompra = () => {
@@ -7,8 +7,8 @@ export default function ProductCard({ name, price, image, alt, showAlert }) {
   };
 
   return (
-    <article className="item">
-      <figure className="product">
+    <article className={styles.item}>
+      <figure className={styles.product}>
         <Image 
           src={image} 
           alt={alt} 
@@ -22,7 +22,7 @@ export default function ProductCard({ name, price, image, alt, showAlert }) {
       <p>
         <span>{price}</span>
       </p>
-      <button className="botao-compra" onClick={handleCompra}> 
+      <button className={styles.botaoCompra} onClick={handleCompra}> 
         Comprar
       </button>
     </article>

@@ -26,14 +26,16 @@ export default function LoginPage() {
 
       <header>
         <h1 className="titulo">Login</h1>
-        <Navbar />
+    
       </header>
 
-      <main className={styles.container}>
-        <form onSubmit={handleSubmit} className={styles.form}>
+      <main className={styles.containerLogin}>
+      
+
+        <form onSubmit={handleSubmit} className={styles.formGroup}>
           <h2>Bem-vindo de volta!</h2>
 
-          <label htmlFor="email">E-mail:</label>
+          <label htmlFor="email" className={styles.label}>E-mail:</label>
           <input
             type="email"
             id="email"
@@ -43,7 +45,7 @@ export default function LoginPage() {
             required
           />
 
-          <label htmlFor="senha">Senha:</label>
+          <label htmlFor="senha" className={styles.label}>Senha:</label>
           <input
             type="password"
             id="senha"
@@ -53,7 +55,7 @@ export default function LoginPage() {
             required
           />
               
-          <button type="submit">Entrar</button>
+          <button type="submit" className={styles.button}>Entrar</button>
           {mensagem && (
             <p
               className={

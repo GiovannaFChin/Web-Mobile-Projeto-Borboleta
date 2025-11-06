@@ -1,29 +1,45 @@
-.container {
+.containerLogin {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 70vh;
+  justify-content: center;
+  height: 100vh;
   background-color: #648370;
-  padding: 2rem;
-}
-
-.form {
-  background-color: #ffffff;
-  padding: 2rem 2.5rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  width: 350px;
-  text-align: center;
   font-family: 'Poppins', 'Nunito', sans-serif;
-  transition: all 0.3s ease;
 }
 
-.form h2 {
-  margin-bottom: 1.5rem;
-  color: #000;
+
+.formGroup {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-label {
+.formGroup input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #98cba9;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #648370;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #9bd3ae;
+  box-shadow: 0 0 5px rgba(152, 203, 169, 0.5);
+}
+
+.label {
   display: block;
   text-align: left;
   margin-bottom: 0.5rem;
@@ -31,7 +47,7 @@ label {
   font-weight: bold;
 }
 
-input {
+.input {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1.2rem;
@@ -40,7 +56,7 @@ input {
   font-size: 1rem;
 }
 
-button {
+.button {
   background-color: #52796f;
   color: white;
   border: none;
