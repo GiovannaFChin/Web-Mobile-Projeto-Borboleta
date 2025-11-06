@@ -6,21 +6,21 @@ import styles from "./produtos.module.css";
 
 const products = [
   {
-    id: 1,
+    id: 'oleo30',
     name: 'Óleo de canabidiol 30ml',
     price: 'R$ 49,90',
     image: '/oleo.webp.jpeg',
     alt: 'Óleo de canabidiol 30ml'
   },
   {
-    id: 2,
+    id: 'oleo60',
     name: 'Óleo de canabidiol 60ml',
     price: 'R$ 89,90',
     image: '/oleo.webp.jpeg',
     alt: 'Óleo de canabidiol 60ml'
   },
   {
-    id: 3,
+    id: 'oleo100',
     name: 'Óleo de canabidiol 100ml',
     price: 'R$ 129,90',
     image: '/oleo.webp.jpeg',
