@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from "../produtos/produtos.module.css";
-export default function ProductCard({ name, price, image, alt, showAlert }) { 
+export default function ProductCard({ name, id, price, image, alt, showAlert }) { 
   
   const handleCompra = () => {
     showAlert(`"${name}" (${price}) foi adicionado ao carrinho!`);
@@ -26,6 +26,9 @@ export default function ProductCard({ name, price, image, alt, showAlert }) {
       <button className={styles.botaoCompra} onClick={handleCompra}> 
         Comprar
       </button>
+        <Link href={`/produtos/${id}`}>
+        <button>Ver detalhes</button>
+      </Link>
     </article>
   );
 }
