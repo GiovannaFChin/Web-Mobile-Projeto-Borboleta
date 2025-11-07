@@ -3,6 +3,7 @@ import Head from 'next/head';
 import ProductCard from '../components/ProductCard';
 import Botao from '../components/Botao';
 import styles from "./produtos.module.css";
+import Link from "next/link";
 
 const products = [
   {
