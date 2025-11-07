@@ -30,6 +30,10 @@ const products = [
 
 export default function Home() {
 
+  const showAlert = (mensagem) => {
+    alert(mensagem);
+  };
+
   return (
     <section className="body">
       <Head>
@@ -61,8 +65,8 @@ export default function Home() {
         </article>
       </header>
 
-      <main className={styles.containerProdutos}>
-        <section className={styles.itens}>
+      <main className={styles.containerProdutos} >
+        <section className={styles.itens} >
           {products.map(product => (
             <ProductCard
               key={product.id}
@@ -70,6 +74,7 @@ export default function Home() {
               price={product.price}
               image={product.image}
               alt={product.alt}
+               showAlert={showAlert}
             />
           ))}
         </section>

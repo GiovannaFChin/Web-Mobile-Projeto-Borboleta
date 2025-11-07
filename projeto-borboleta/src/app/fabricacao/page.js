@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import FabricationContent from '../components/FabricationContent';
 import Botao from '../components/Botao';
 
