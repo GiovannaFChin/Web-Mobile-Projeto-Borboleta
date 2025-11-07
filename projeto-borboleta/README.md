@@ -62,7 +62,6 @@ Adultos interessados em:
 - Catálogo de óleos de CBD com nome, preço e botão de compra
 - Alertas interativos indicam produtos adicionados ao carrinho
 - Sistema de roteamento dinâmico para visualizar detalhes individuais de cada produto (nome, imagem, descrição, preço) e botão para voltar à lista de produtos
-- 
 
 ### Página Fabricação
 - Descrição detalhada do processo de fabricação do óleo de CBD
