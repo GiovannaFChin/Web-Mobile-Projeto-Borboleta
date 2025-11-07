@@ -91,3 +91,8 @@ button:hover {
     padding: 1.5rem;
   }
 }
+
+:global(body.modo-escuro) .containerLogin {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}

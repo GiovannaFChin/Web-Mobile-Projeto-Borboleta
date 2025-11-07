@@ -66,3 +66,13 @@
   flex-wrap: wrap;
   padding: 1rem;
 }
+
+:global(body.modo-escuro) .containerProdutos {
+  background-color: #1a1a1a;
+}
+
+:global(body.modo-escuro) .item {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  box-shadow: 10px 10px 22px 7px rgba(0, 0, 0, 0.5);
+}
