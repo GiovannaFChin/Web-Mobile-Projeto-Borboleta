@@ -44,6 +44,7 @@ Adultos interessados em:
 ##  Tecnologias Utilizadas
 
 - **Next.js** — Framework React moderno
+- **React.js** — Criação de interfaces interativas
 - **HTML, CSS, JavaScript** — Estrutura e interatividade
 - **Node.js / NPM** — Ambiente de desenvolvimento e gerenciamento de pacotes
 - **Vercel** — Plataforma de deploy e hospedagem
@@ -60,6 +61,8 @@ Adultos interessados em:
 ### Página Produtos
 - Catálogo de óleos de CBD com nome, preço e botão de compra
 - Alertas interativos indicam produtos adicionados ao carrinho
+- Sistema de roteamento dinâmico para visualizar detalhes individuais de cada produto (nome, imagem, descrição, preço) e botão para voltar à lista de produtos
+- 
 
 ### Página Fabricação
 - Descrição detalhada do processo de fabricação do óleo de CBD
@@ -68,6 +71,7 @@ Adultos interessados em:
 ### Página de Login
 - Formulário de cadastro de usuários com campos obrigatórios (nome, e-mail, nome do médico e telefone)
 - Alertas de confirmação de login
+- Layout responsivo e intuitivo
 
 ### Interatividade e Experiência do Usuário
 - Botão **“Voltar ao Topo”** visível ao rolar a página
