@@ -34,7 +34,7 @@ O site é destinado a adultos que buscam:
 
 ---
 
-# Tecnologias Utilizadas
+# Tecnologias utilizadas
 
 - **Next.js** — Framework React moderno  
 - **React.js** — Interfaces dinâmicas e modulares  
