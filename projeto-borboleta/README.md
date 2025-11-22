@@ -80,12 +80,18 @@ Responsável pela estrutura global do site:
 
 ---
 
-## 3. **API (Em Andamento)**
+## 3. **API**
 
-O projeto está passando pela implementação de uma **API**, 
+O projeto possui uma barra horizontal localizada abaixo dos containers principais de produtos.
+Essa barra consome dados de uma API externa e exibe dinamicamente várias imagens de produtos.
 
-Atualmente, o desenvolvimento da API está **em andamento**, sendo estruturada para garantir segurança, desempenho e escalabilidade.
+🔌 Como funciona
 
+O projeto realiza uma chamada à API da Unsplash para buscar imagens relacionadas ao termo: "natural medicine".
+
+Recebe uma lista de imagens.
+
+As imagens são adicionadas automaticamente à barra horizontal.
 ---
 
 ## 4. **Estilização**
@@ -96,8 +102,8 @@ Atualmente, o desenvolvimento da API está **em andamento**, sendo estruturada p
 - Regras do **modo escuro**  
 - Estrutura visual padrão do site  
 
-### CSS Modules — `Section.module.css`
-- Estilos específicos para seções da Home  
+### CSS Modules 
+- Estilos específicos para seções de cada página 
 - Escopo isolado para evitar conflitos  
 - Controle local de layouts (texto, imagens, espaçamentos)  
 

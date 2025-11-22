@@ -4,6 +4,8 @@ import ProductCard from '../components/ProductCard';
 import Botao from '../components/Botao';
 import styles from "./produtos.module.css";
 import Link from "next/link";
+import { useEffect, useState } from 'react';
+
 
 const products = [
   {
@@ -31,9 +33,27 @@ const products = [
 
 export default function Home() {
 
+  const [apiImages, setApiImages] = useState([]);
   const showAlert = (mensagem) => {
     alert(mensagem);
   };
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const res = await fetch(
+  `https://api.unsplash.com/search/photos?query=natural+medicine&per_page=10&client_id=${process.env.NEXT_PUBLIC_UNSPLASH_KEY}`
+    );
+        const data = await res.json();
+        setApiImages(data.results || []);
+      } catch (error) {
+        console.error("Erro ao buscar imagens:", error);
+        setApiImages([]);
+      }
+    };
+
+    fetchImages();
+  }, []);
 
   return (
     <section className="body">
@@ -80,6 +100,17 @@ export default function Home() {
             />
           ))}
         </section>
+
+      <section className={styles.galleryBar}>
+        {Array.isArray(apiImages) && apiImages.map(img => (
+          <img
+            key={img.id}
+            src={img.urls?.small}
+            alt={img.alt_description || "Imagem natural"}
+            className={styles.galleryImg}
+          />
+        ))}
+      </section>
       </main>
       
    

@@ -8,7 +8,7 @@ return(
  
   <section className={styles.container}>
     <article className={styles.texto}>
-      <h1>O que é o óleo?</h1>
+      <h1 className="titulo">O que é o óleo?</h1>
       <p>
         O óleo de CBD é um extrato derivado do canabidiol, um composto natural presente na planta Cannabis sativa. Diferente do THC, o CBD não possui efeitos psicoativos, sendo utilizado para fins terapêuticos no tratamento de condições como ansiedade, dor crônica, epilepsia e distúrbios do sono. No Brasil, seu uso é regulado pela Anvisa e requer prescrição médica, devendo conter menos de 0,3% de THC em sua composição. Pode ser administrado por via sublingual, tópica ou oral, sempre sob orientação profissional. Embora geralmente bem tolerado, pode causar efeitos colaterais leves como boca seca ou sonolência em alguns casos. Trata-se de uma opção terapêutica complementar com evidências crescentes de eficácia, mas que exige acompanhamento médico adequado.
       </p>
