@@ -40,7 +40,6 @@ O site é destinado a adultos que buscam:
 - **React.js** — Interfaces dinâmicas e modulares  
 - **HTML, CSS, JavaScript** — Estrutura e comportamento  
 - **Node.js / NPM** — Ambiente e gerenciamento de pacotes  
-- **Vercel** — Plataforma de deploy e hospedagem  
 
 ---
 
